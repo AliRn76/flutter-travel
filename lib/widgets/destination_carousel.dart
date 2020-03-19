@@ -48,7 +48,7 @@ class DestinationCarousel extends StatelessWidget {
               return GestureDetector(
                 onTap: () => Navigator.push(context,
                     PageRouteBuilder(
-                        transitionDuration: Duration(milliseconds: 600),
+//                        transitionDuration: Duration(milliseconds: 600),
                         pageBuilder: (_, __, ___) => DestinationScreen(destination: destination)
                     )),
                 child: Container(
@@ -73,7 +73,7 @@ class DestinationCarousel extends StatelessWidget {
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: <Widget>[
                                 Text(
-                                  '${destination.activities.length} activities',
+                                  '${destination.activities.length} Tours',
                                   style: TextStyle(
                                     fontSize: 20.0,
                                     fontWeight: FontWeight.bold,
